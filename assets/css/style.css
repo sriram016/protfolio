@@ -24,7 +24,8 @@ html{
     overflow-x: hidden;
 }
 a{
-    text-decoration: none;
+    text-decoration: none !important;
+    color: inherit !important;
 }
 ul{
     padding-left: 0 !important;
@@ -250,19 +251,60 @@ li{
     
 }
 /* experience section start */
-.exp-main{
+.exp-bg-main{
     position: relative;
     background: var(--header-color);
+    padding: 100px 40px;
+    border-radius: 10px;
+}
+.exp-hed{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.exp-hed span{
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+.exp-hed h2{
+    color: var(--white);
+    font-size: 40px;
+    font-weight: 700;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.exp-main{
+    position: relative;
+    background: #212121;
     overflow: hidden;
     padding: 40px 50px;
     z-index: 23;
-    border-radius: 5px;
+    border-radius: 50%;
+    width: 240px;
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
-.exp-main-sec{
+.exp-main h4{
+    font-size: 80px;
+    color: var(--white);
+    font-weight: 700;
+}
+.exp-main h4 span{
+    font-size: 80px;
+    color: var(--white);
+    font-weight: 700;
+}
+.exp-main span{
+    color: var(--para-color);
+    font-weight: 700;
+}
+/* .exp-main-sec{
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+} */
 /* .exp-main::after{
     content: " ";
     position: absolute;
@@ -275,7 +317,7 @@ li{
     z-index: -1;
     background: var(--secondary-color);
 } */
-.exp-year h4{
+/* .exp-year h4{
     font-size: 80px;
     color: var(--secondary-color);
 }
@@ -312,7 +354,7 @@ li{
 .exp-project p{
     color: var(--para-color);
     padding-top: 10px;
-}
+} */
 /*  */
 .marque-wrap{
     width: 100%;
@@ -482,4 +524,70 @@ li{
     text-align: center;
     margin-top: 20px;
     font-family: var(--font-family);
+}
+
+/*  */
+.about-bg-main{
+    position: relative;
+    background: var(--header-color);
+    padding: 100px 80px;
+    border-radius: 5px;
+}
+.about-content span{
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+.about-content h2{
+    font-size: 40px;
+    color: var(--white);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: 700;
+}
+.about-content p{
+    color: var(--para-color);
+    padding-bottom: 20px;
+}
+.about-list h6{
+    color: var(--white);
+    padding-top: 20px;
+    font-weight: 700;
+    display: flex;
+    font-size: 15px;
+}
+.about-list{
+    padding-bottom: 20px;
+}
+.about-list h6 i{
+    color: var(--secondary-color);
+    padding-right: 10px;
+}
+.about-contact-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin-top: 30px;
+}
+.email-sec-main{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.email-text h5{
+    padding-top: 10px;
+    color: var(--white);
+}
+.email-text span{
+    font-size: 13px;
+    color: var(--secondary-color) !important;
+}
+.emai-icon i{
+    color: var(--white);
+}
+.about-img img{
+    width: 100%;
+    border-radius: 5px;
 }
